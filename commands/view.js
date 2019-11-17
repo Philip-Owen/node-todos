@@ -1,5 +1,9 @@
+const path = require('path');
+const fs = require('fs');
+
 module.exports = () => {
-	const todos = require('../todos.json');
+	const data = fs.readFileSync(path.resolve(__dirname, '../todos.json'));
+	const todos = JSON.parse(data);
 
 	let output = '\n    Todos:\n\n';
 
