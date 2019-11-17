@@ -1,0 +1,21 @@
+{
+	"name": "node-todos",
+	"version": "1.0.0",
+	"author": "Phil Owen",
+	"description": "'A node cli todo list utility",
+	"license": "ISC",
+	"preferGlobal": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/philip-owen/node-todos.git"
+	},
+	"bin": {
+		"node-todos": "bin/node-todos"
+	},
+	"scripts": {},
+	"devDependencies": {},
+	"dependencies": {
+		"figlet": "^1.2.4",
+		"minimist": "^1.2.0"
+	}
+}
