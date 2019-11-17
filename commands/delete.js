@@ -22,7 +22,9 @@ module.exports = args => {
 
 	fs.writeFile(path.resolve(__dirname, '../todos.json'), JSON.stringify(filteredTodos), err => {
 		if (!err) {
-			console.log('\u001b[2J\u001b[0;0H' + `\n   Removed TODO - ${id}: ${removedTodo.text}\n`);
+			require('./view')();
+			console.log(`\nREMOVED TODO - ${id}: ${removedTodo.text}\n`);
+			process.exit();
 		}
 		console.log(`Error writing todos: ${err}`);
 	});

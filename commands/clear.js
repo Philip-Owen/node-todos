@@ -8,8 +8,9 @@ module.exports = args => {
 		fs.writeFile(path.resolve(__dirname, '../todos.json'), JSON.stringify(todos), err => {
 			if (!err) {
 				console.log('\u001b[2J\u001b[0;0H' + `\n   TODOs list cleared!\n`);
-      }
-      console.log(`Error writing todos: ${err}`);
+				process.exit();
+			}
+			console.log(`Error writing todos: ${err}`);
 		});
 	}
 };
