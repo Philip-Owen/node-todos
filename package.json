@@ -15,7 +15,7 @@
 	"scripts": {},
 	"devDependencies": {},
 	"dependencies": {
-		"figlet": "^1.2.4",
+		"figlet": "^1.11.3",
 		"minimist": "^1.2.0"
 	}
 }
